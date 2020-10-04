@@ -1,0 +1,115 @@
+:root {
+  --grid-rows: 3;
+  --grid-columns: 3;
+}
+
+body {
+    margin:0%;
+    background-color: #c3ad5b !important;
+}
+
+header {
+    background-image: url(../images/main_image.jpg);
+    background-size: cover ;
+    height : 30%;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 10%;
+    font-size: 70px;
+    color: #c3ad5b;
+}
+
+nav {
+    background-image: url(../images/main_image.jpg);
+    width: 100%;
+    overflow: auto;
+}
+
+/* Navigation links */
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 32.05%; 
+    text-align: center;
+  }
+  
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+    background-color: #565656;    
+  }
+  
+  /* Style the current/active link */
+  .navbar a.active {
+    background-color: #a03939;
+  }
+
+  .textContainer {
+    margin-left : 30%;
+    margin-right: 30%;
+    height: 60%;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center; /* Vertical center alignment */
+    justify-content: center;
+  }
+
+  .textContainer span {
+    font-size: 25px;
+    text-align: justify;
+  }
+
+  .contactContainer {
+    display:block;
+    margin-left : 30%;
+    margin-right: 30%;
+  }
+
+  .contactContainer p {
+    font-size: 25px;
+    text-align: justify;
+    margin-top: 20%;
+    margin-bottom: 5%;
+  }
+
+  .paddingLeft40 {
+    padding-left: 40%;
+    margin-right: 20px;
+  }
+
+  .socialMediaDiv img {
+    height:64px;
+    width:64px;
+  }
+
+  .foodImage {
+    height:220px;
+    width:250px;
+  }
+
+  .grid9 {
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+  }
+
+  .foodCard {
+    border: 5px solid #333;
+  }
+
+  .foodImage {
+    display:block;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .foodName {
+    text-align: center;
+    font-size: 30px;
+  }
